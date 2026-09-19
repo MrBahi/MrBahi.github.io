@@ -1,21 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MrBahi | Developer Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 40px; color: #333; }
-        h1 { color: #24292e; }
-        .project-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 20px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MrBahi | Data science, machine learning and automation</title>
+  <meta name="description" content="MrBahi builds data science projects, machine learning models and automation trackers. All projects are in the Amahoro repository on GitHub.">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --ink: #101828;
+      --muted: #4a5568;
+      --line: #d5dbe6;
+      --accent: #2447e8;
+      --accent-ink: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0e1420;
+        --ink: #eef1f7;
+        --muted: #a3adc0;
+        --line: #2a3446;
+        --accent: #7c96ff;
+        --accent-ink: #0e1420;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: clamp(2rem, 8vw, 5rem) 1.5rem 4rem;
+    }
+
+    .name {
+      margin: 0 0 1.25rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      max-width: 34rem;
+      margin: 0 0 2rem;
+      color: var(--muted);
+      font-size: 1.1875rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 4rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.5rem;
+      border: 2px solid var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .button-primary { background: var(--accent); color: var(--accent-ink); }
+    .button-secondary { color: var(--accent); }
+    .button:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.375rem;
+      letter-spacing: -0.01em;
+    }
+
+    section { margin-bottom: 3.5rem; }
+
+    .build-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+    .build-list li {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .build-list strong { display: block; }
+    .build-list span { color: var(--muted); }
+
+    .project {
+      display: block;
+      padding: 1.5rem;
+      border: 1px solid var(--line);
+      border-radius: 0.75rem;
+      color: inherit;
+      text-decoration: none;
+    }
+    .project:hover { border-color: var(--accent); }
+    .project-title {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .project-text { color: var(--muted); }
+
+    footer {
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+    footer a { color: var(--accent); }
+  </style>
 </head>
 <body>
-    <h1>Welcome to MrBahi's Portfolio 👋</h1>
-    <p>Data science, machine learning models, and automation trackers built live.</p>
-    
-    <div class="project-card">
-        <h3>📊 Pinned Repositories</h3>
-        <p>Explore my masterclass and smp-tracker code bases directly on my GitHub profile.</p>
+  <main class="page">
+    <p class="name">MrBahi</p>
+    <h1>I build data science projects, machine learning models and automation trackers.</h1>
+    <p class="lead">I learn by building in public. Every project I make lives in one place on GitHub, so you can read the code and see how it grew.</p>
+
+    <div class="actions">
+      <a class="button button-primary" href="https://github.com/MrBahi/Amahoro">See my projects</a>
+      <a class="button button-secondary" href="https://github.com/MrBahi">GitHub profile</a>
     </div>
+
+    <section aria-labelledby="build-heading">
+      <h2 id="build-heading">What I build</h2>
+      <ul class="build-list">
+        <li><strong>Data science</strong><span>Working with data to find answers and show them clearly.</span></li>
+        <li><strong>Machine learning models</strong><span>Models that learn from data to make predictions.</span></li>
+        <li><strong>Automation trackers</strong><span>Small tools that keep track of things so I don't have to.</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <a class="project" href="https://github.com/MrBahi/Amahoro">
+        <span class="project-title">Amahoro</span>
+        <span class="project-text">All my projects in one repository. Open it to browse the code.</span>
+      </a>
+    </section>
+
+    <footer>
+      Find me on <a href="https://github.com/MrBahi">GitHub</a>.
+    </footer>
+  </main>
 </body>
 </html>
